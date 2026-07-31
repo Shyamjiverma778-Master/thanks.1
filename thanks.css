@@ -360,7 +360,7 @@ footer {
 }
 #gallery div:hover{
       transform:
-      translateX(-800px)
+     
         translateZ(80px)
         scale(1.08);
 
