@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+
+  /* ===== Brand Colors ===== */
+  --primary: #ff4d8d;
+  --primary-light: #ff7eb3;
+  --secondary: #7c4dff;
+  --accent: #ffd166;
+
+  /* ===== Background ===== */
+  --bg-color: #fff8fc;
+  --surface: #ffffff;
+  --surface-2: #fff1f7;
+
+  /* ===== Text ===== */
+  --text-primary: #2d1b3d;
+  --text-secondary: #6b5a78;
+  --text-light: #ffffff;
+
+  /* ===== Borders ===== */
+  --border-color: #f2c6d9;
+  --border-width: 2px;
+  --border-radius-sm: 10px;
+  --border-radius-md: 18px;
+  --border-radius-lg: 28px;
+  --border-radius-full: 999px;
+
+  /* ===== Shadows ===== */
+  --shadow-sm: 0 4px 10px rgba(255, 77, 141, 0.15);
+  --shadow-md: 0 10px 25px rgba(255, 77, 141, 0.22);
+  --shadow-lg: 0 18px 40px rgba(255, 77, 141, 0.30);
+
+  /* ===== Gradient ===== */
+  --gradient-primary: linear-gradient(135deg, #ff4d8d, #7c4dff);
+  --gradient-soft: linear-gradient(135deg, #fff0f7, #f3ecff);
+  --gradient-gold: linear-gradient(135deg, #ffd166, #ffb703);
+
+  /* ===== Buttons ===== */
+  --btn-bg: var(--gradient-primary);
+  --btn-text: #ffffff;
+  --btn-hover: #ff2f75;
+
+  /* ===== Typography ===== */
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* ===== Spacing ===== */
+  --space-xs: 6px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+
+  /* ===== Animation ===== */
+  --transition: all 0.35s ease;
+  --bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  /* ===== Container ===== */
+  --container-width: 1200px;
+
+}
+body{
+  background-image:url(image/bg.png) ;
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-color: #fff8fc;
+}
+header{
+  background: var(--gradient-primary);
+  width: auto;
+  
+}
+
+header h3{
+  font-size: 25px;
+  text-align: center;
+  
+}
+header i{
+  color: #ff2f75;
+}
+header span{
+  color: rgb(175, 200, 50);
+}
+header p{
+  font-size: 9px;
+  text-align: center;
+  color: yellow;
+  padding-bottom: 10px;
+  letter-spacing: 0.5rem;
+  
+}
+main h4{
+ text-align: center;
+ font-size: 15px;
+ font-family: poppins;
+ letter-spacing: 0.1rem;
+ padding-top: 10px;
+}
+
+.container{
+   display: grid;
+    width: 1000px;
+    height: auto;
+/* word-wrap: break-word; */
+    /* margin-top: 20px; */
+    margin: auto;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+     animation-name: shyamji;
+    animation-duration:3s;
+   
+   
+}
+
+@keyframes shyamji{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to{
+    opacity: 1;
+     transform: translateY(-10px);
+  }
+}
+.item{
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 10px;
+   font-weight: 800;
+    display: grid;
+    place-items: center;
+    /* display: flex; */
+     background-color: white;
+  box-shadow: 10px 15px 25px pink;
+  padding: 10px;
+
+}
+.item h2{
+  color:rgb(88, 255, 88);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+.item i{
+ /* margin-top:30px;
+  padding: 10px; */
+  font-size: 40px;
+  color: #ff4d8d;
+  
+   
+   border-radius: 50%;
+}
+#item1{
+  grid-column: 1/2;
+}
+#item1 h2{
+  transform: translateY(-8px);
+}
+#item2{
+  grid-column: 2/3;
+
+}#item3{
+  grid-column: 3/4;
+
+}#item4{
+  grid-column: 1/2;
+
+}#item5{
+  grid-column:2/3;
+
+}#item6{
+  grid-column: 3/4;
+
+}
+footer{
+  background: #ff005d;
+  margin-top: 25px;
+  height: auto;
+  text-align: center;
+}
+footer em{
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(65, 255, 65);
+}
+footer p{
+  padding-top: 0%;
+  font-size: 30px;
+}
+
